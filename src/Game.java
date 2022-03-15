@@ -37,42 +37,10 @@ public class Game  extends Canvas implements Runnable,KeyListener{
 			nodeSnake[i].x = nodeSnake[i-1].x;
 			nodeSnake[i].y = nodeSnake[i-1].y;
 		}
-		if(nodeSnake[0].x + 10 < 0) {
-			conf.nivel = 1;
-			conf.spd = 1 ;
-			tamanho = 10; 
-			System.out.println(" Game Over " );
-			System.out.println("Nivel: " + conf.nivel);
-			System.out.println("Tamanho: " + tamanho);
-			nodeSnake[0].x = 470;
-		}else if(nodeSnake[0].x >= 480) {
-			conf.nivel = 1;
-			conf.spd = 1 ;
-			tamanho = 10; 
-			System.out.println(" Game Over " );
-			System.out.println("Nivel: " + conf.nivel);
-			System.out.println("Tamanho: " + tamanho);
-			nodeSnake[0].x = -10;
-		}else if(nodeSnake[0].y + 10 < 0) {
-			conf.nivel = 1;
-			conf.spd = 1 ;
-			tamanho = 10; 
-			System.out.println(" Game Over " );
-			System.out.println("Nivel: " + conf.nivel);
-			System.out.println("Tamanho: " + tamanho);
-			nodeSnake[0].y = 480;
-		}else if(nodeSnake[0].y >= 480) {
-			conf.nivel = 1;
-			conf.spd = 1 ;
-			tamanho = 10; 
-			System.out.println(" Game Over " );
-			System.out.println("Nivel: " + conf.nivel);
-			System.out.println("Tamanho: " + tamanho);
-			nodeSnake[0].y = -10;
-		}
+		
 		
 
-		/*if(nodeSnake[0].x + 10 < 0) {
+		if(nodeSnake[0].x + 10 < 0) {
 			nodeSnake[0].x = 470;
 		}else if (nodeSnake[0].x >= 480) {
 			nodeSnake[0].x = -10;
@@ -81,7 +49,7 @@ public class Game  extends Canvas implements Runnable,KeyListener{
 			nodeSnake[0].y = 480;
 		}else if (nodeSnake[0].y >= 480) {
 			nodeSnake[0].y = -10;
-		}*/
+		}
 		
 		
 		
